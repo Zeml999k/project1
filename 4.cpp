@@ -35,6 +35,8 @@ void Pass(int resulT, std::ofstream& Regist, std::ifstream& confirm)
 		std::cin >> pass;
 		Regist << log << "\n" << pass << "\n\n";
 	}
+	Regist.close();
+	confirm.close();
 }
 
 int main()
@@ -46,7 +48,5 @@ int main()
 	std::cout << "Press 1.Вход\n " << "\t2.Регистрация" << std::endl;
 	std::cin >> rezult;
 	Pass(rezult, registeR, Conf);
-	registeR.close();
-	Conf.close();
 	return 0;
 }
