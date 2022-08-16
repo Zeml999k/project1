@@ -24,8 +24,9 @@ void Pass(int resulT, std::ofstream& Regist, std::ifstream& confirm)
 			if(str == log)count++;
 			if(str == pass)count++;
 		}
-		if(count == 2) std::cout << "вы вошли в систему!" << std::endl;
-		else { std::cout << "не правильный логин или пароль!" << std::endl; }
+			if(count == 2) std::cout << "вы вошли в систему!" << std::endl;
+			else std::cout << "не правильный логин или пароль!" << std::endl;
+
 
 	}
 	else
